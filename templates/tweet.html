@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tweets</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="node_modules/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="static/css/perfect-scrollbar.min.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="node_modules/jqvmap/dist/jqvmap.min.css" />
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="static/images/favicon.png" />
+  <style>
+  * {
+  box-sizing: border-box; 
+  
+}
+
+/* Create two equal columns that floats next to each other */
+.column {  
+
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+   </style>
+</head>
+
+<body>
+<div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <img src="static/images/tn.png" width="50" height="50"style="float:left"><h3 style="color:#6C3483;">Covid19Info</h3>
+		</div>
+      <h5>help line: 044-29510500</h5>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <!-- partial:../../partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+			<li class="nav-item">
+              <a class="nav-link" href="/about">
+                <span class="menu-title"><h5 class="font-weight-normal mb-3">About us</span></h5>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <span class="menu-title">Live Updates</span>
+                
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/public">
+                <span class="menu-title">Public advice</span>
+                <i class="mdi mdi-contacts menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/donation">
+                <span class="menu-title">Donation</span>
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/tweets">
+                <span class="menu-title">Tweet updates</span>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="/helpdesk">
+                <span class="menu-title"><h5 class="font-weight-normal mb-3">Help Desk</span></h5>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+            
+        </nav>
+        <!-- partial -->
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+				<div class="column">
+                  <h4 class="card-title">Tamilnadu health minister tweets....</h4>
+                  <div class="scroll">
+					<div class="item active">
+				  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Date and time</th>
+                        <th>Tweet</th>
+                      </tr>
+                    </thead>
+                    <tbody><indent>
+					{% for key in dict_obj_eng1 %}
+                      <tr>
+                        <td>{{key}}</td>
+                        <td>{{dict_obj_eng1[key]}}</td>
+                      </tr>
+					{%endfor%}
+					</indent>
+                    </tbody>
+                  </table>
+				  </div></div>
+				  </div>
+              </div>
+            </div></div>
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+			  <div class="card-body">
+                <div class="column">
+                  <h4 class="card-title">தமிழ்நாடு சுகாதார அமைச்சர் ட்வீட் செய்துள்ளார்....</h4>
+				     <div class="scroll">
+					<div class="item active">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Date and time</th>
+                        <th>Tweet</th>
+                      </tr>
+                    </thead>
+                    <tbody><indent>
+					{% for key in dict_obj_tam1 %}
+                      <tr>
+                        <td>{{key}}</td>
+                        <td>{{dict_obj_tam1[key]}}</td>
+                      </tr>
+					{%endfor%}
+					</indent>
+                    </tbody>
+                  </table>
+				  </div></div>
+				  </div>
+              </div>
+            </div>
+          </div>
+		  </div>
+		  <div class="row">
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+			  <div class="card-body">
+                <div class="column">
+                  <h4 class="card-title">Our MP tweets....</h4>
+                     <div class="scroll">
+					<div class="item active">
+				  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Date and time</th>
+                        <th>Tweet</th>
+                      </tr>
+                    </thead>
+                    <tbody><indent>
+					{% for key in dict_obj_eng2 %}
+                      <tr>
+                        <td>{{key}}</td>
+                        <td>{{dict_obj_eng2[key]}}</td>
+                      </tr>
+					{%endfor%}
+					</indent>
+                    </tbody>
+                  </table>
+				  </div></div>
+				  </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+			  <div class="card-body">
+                <div class="column">
+                  <h4 class="card-title">நமது நாடாளுமன்ற உறுப்பினர் ட்வீட் செய்கிறார்....</h4>
+                     <div class="scroll">
+					<div class="item active">
+				  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Date and time</th>
+                        <th>Tweet</th>
+                      </tr>
+                    </thead>
+                    <tbody><indent>
+					{% for key in dict_obj_tam2 %}
+                      <tr>
+                        <td>{{key}}</td>
+                        <td>{{dict_obj_tam2[key]}}</td>
+                      </tr>
+					{%endfor%}
+					</indent>
+                    </tbody>
+                  </table>
+				  </div></div>
+				  </div>
+              </div>
+            </div>
+          </div></div>
+		  		  <div class="row">
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+			  <div class="card-body">
+                <div class="column">
+                  <h4 class="card-title">Our Prime Minister tweets....</h4>
+                     <div class="scroll">
+					<div class="item active">
+				  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Date and time</th>
+                        <th>Tweet</th>
+                      </tr>
+                    </thead>
+                    <tbody><indent>
+					{% for key in dict_obj_eng3 %}
+                      <tr>
+                        <td>{{key}}</td>
+                        <td>{{dict_obj_eng3[key]}}</td>
+                      </tr>
+					{%endfor%}
+					</indent>
+                    </tbody>
+                  </table>
+				  </div></div>
+				  </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+			  <div class="card-body">
+                <div class="column">
+                  <h4 class="card-title">நமது பிரதமர் ட்வீட் செய்கிறார்....</h4>
+   <div class="scroll">
+					<div class="item active">                 
+				 <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Date and time</th>
+                        <th>Tweet</th>
+                      </tr>
+                    </thead>
+                    <tbody><indent>
+					{% for key in dict_obj_tam3 %}
+                      <tr>
+                        <td>{{key}}</td>
+                        <td>{{dict_obj_tam3[key]}}</td>
+                      </tr>
+					{%endfor%}
+					</indent>
+                    </tbody>
+                  </table>
+				  </div></div>
+				  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- partial -->
+      </div>
+      <!-- row-offcanvas ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="perfs/perfect-scrollbar.jquery.min.js"></script>
+  <script src="node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="static/js/off-canvas.js"></script>
+  <script src="static/js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>

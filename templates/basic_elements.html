@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Donation</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../node_modules/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="../../node_modules/icheck/skins/all.css" />
+  <link rel="stylesheet" href="../../node_modules/select2/dist/css/select2.min.css" />
+  <link rel="stylesheet" href="../../node_modules/select2-bootstrap-theme/dist/select2-bootstrap.min.css" />
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="static/images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <img src="static/images/tn.png" width="50" height="50"style="float:left"><h3 style="color:#6C3483;">Covid19Info</h3>
+		</div>
+		<h5>help line: 044-29510500</h5>
+          </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <!-- partial:../../partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+		  			<li class="nav-item">
+              <a class="nav-link" href="/about">
+                <span class="menu-title"><h5 class="font-weight-normal mb-3">About us</span></h5>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <span class="menu-title">Live Updates</span>
+                
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/public">
+                <span class="menu-title">Public advice</span>
+                <i class="mdi mdi-contacts menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/donation">
+                <span class="menu-title">Donation</span>
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/tweets">
+                <span class="menu-title">Tweet updates</span>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="/helpdesk">
+                <span class="menu-title"><h5 class="font-weight-normal mb-3">Help Desk</span></h5>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+            
+        </nav>
+        <!-- partial -->
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 d-flex align-items-stretch grid-margin">
+              <div class="row flex-grow">
+                <div class="col-12 grid-margin">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Donation</h4>
+                      <p class="card-description">
+                        Let's help the needy
+                      </p>
+                      <form class="forms-sample" action="http://127.0.0.1:5000/donate" method="Post">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Donate:</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" name="amt" placeholder="Enter the donation amount">
+                        </div>
+                        <div class="form-group">
+                          <label for="fname">First name</label>
+                          <input type="text" class="form-control" id="fname" name="fname" placeholder="First name:">
+                        </div>
+						<div class="form-group">
+                          <label for="lname">Last name</label>
+                          <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name:">
+                        </div>
+						<div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="text" class="form-control" id="email"name="email" placeholder="Enter the email:">
+                        </div>
+						<div class="form-group">
+                          <label for="Phn">Phone</label>
+                          <input type="text" class="form-control" id="phn" name="phn" placeholder="Enter the phone number:">
+                        </div>
+						<div class="form-group">
+						<label for="exampleInputPassword1">Method of donation</label></br></br>
+						<label class="tm-radio-label mb-0"><input type="radio" name="pay" value="Onetime" class="mr-1" required> One Time</label>
+						<label class="tm-radio-label"><input type="radio" name="pay" value="Monthly" class="mr-1" required>Monthly</label>
+						</div>
+                        <input type="submit" class="btn btn-success mr-2" value="Donate" >
+                        
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      
+                      <img src="static/images/donate.jpg" class="forms-sample">
+                        
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        
+        <!-- partial -->
+      </div>
+      <!-- row-offcanvas ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../../node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="../../node_modules/icheck/icheck.min.js"></script>
+  <script src="../../bower_components/typeahead.js/dist/typeahead.bundle.min.js"></script>
+  <script src="../../node_modules/select2/dist/js/select2.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="static/js/off-canvas.js"></script>
+  <script src="static/js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="static/js/file-upload.js"></script>
+  <script src="static/js/iCheck.js"></script>
+  <script src="static/js/typeahead.js"></script>
+  <script src="static/js/select2.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>

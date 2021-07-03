@@ -1,0 +1,302 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Covid19Info-your partner in crisis</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="static/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="static/css/perfect-scrollbar.min.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="dist/themes/css-stars.css">
+  <link rel="stylesheet" href="static/css/bootstrap-datepicker.min.css" />
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="static/css/style.css">
+    <!-- Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+        font-family: "pt-sans-bold", sans-serif;
+    font-weight: initial;
+      }
+  * {
+  box-sizing: border-box; 
+  
+}
+
+/* Create two equal columns that floats next to each other */
+.column {  
+
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+      #chatbox {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: 60px;
+      }
+      #userInput {
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        margin-top: 60px;
+      }
+      #textInput {
+        width: 90%;
+        border: none;
+        border-bottom: 3px solid black;
+        font-family: monospace;
+        font-size: 17px;
+      }
+      .userText {
+        color: white;
+        font-family: monospace;
+        font-size: 17px;
+        text-align: right;
+        line-height: 30px;
+      }
+      .userText span {
+        background-color: #808080;
+        padding: 10px;
+        border-radius: 2px;
+      }
+      .botText {
+        color: white;
+        font-family: monospace;
+        font-size: 17px;
+        text-align: left;
+        line-height: 30px;
+      }
+      .botText span {
+        background-color: #4169e1;
+        padding: 10px;
+        border-radius: 2px;
+      }
+      #tidbit {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+      }
+      .boxed {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: 60px;
+        border: 5px solid green;
+		background-color:'black';
+      }
+	
+      .box {
+	 width: 40%;
+        border: 5px solid black;
+      }
+	.chat-popup{
+	 background: white;
+	 width: 40%
+	
+	  }
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width:1000px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 50px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.mytable {  background-color:#FFFFE0;
+			border-collapse:collapse;
+			font-family:Georgia, Garamond, Serif;
+			color:black; }
+.mytable th { width:30%;
+				font-family: Helvetica;
+				text-shadow: 1px 1px 4px black;
+				letter-spacing:0.2em;
+				background-color:#BDB76B;color:white; }
+.mytable td, .mytable th { padding:2.5px;
+						border:0.5px solid #BDB76B; }
+.mytable td { line-height:1.8em;
+			font-size: 1.4rem;
+			font-family : cursive;}
+div.scroll { 
+                padding:4px;  
+                width: 900px; 
+                height: 270px; 
+                overflow-x: hidden; 
+                overflow-x: auto; 
+                text-align:justify; 
+            } 
+</style>
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <img src="static/images/tn.png" width="50" height="50"style="float:left"><h3 style="color:#6C3483;">Covid19Info</h3>
+		</div>
+		<h5>Help line: 044-29510500   </h5>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+			<li class="nav-item">
+              <a class="nav-link" href="/about">
+                <span class="menu-title"><h5 class="font-weight-normal mb-3">About us</span></h5>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <span class="menu-title"><h5 class="font-weight-normal mb-3">Live Updates</span></h5>
+                <span class="menu-sub-title"></span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+
+            <li class="nav-item"> 
+              <a class="nav-link" href="/public">
+                <span class="menu-title"><h5 class="font-weight-normal mb-3">Public Advice</span></h5>
+                <i class="mdi mdi-contacts menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/donation">
+               <span class="menu-title"><h5 class="font-weight-normal mb-3">Donate</span></h5>
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>  
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('tweet_scrap') }}">
+                <span class="menu-title"><h5 class="font-weight-normal mb-3">Tweet updates</span></h5>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="/helpdesk">
+                <span class="menu-title"><h5 class="font-weight-normal mb-3">Help Desk</span></h5>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+        </nav>
+<body>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<img src="static/images/volen.jpg" style="width:50%;">
+  <script src="dist/jquery.min.js"></script>
+  <script src="dist/umd/popper.min.js"></script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="perfs/perfect-scrollbar.jquery.min.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="dist/Chart.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+      <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->    
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/newspopper.min.js"></script>
+    <!-- Bootstrap js -->  
+    <script src="js/bootstrap/newsbootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
