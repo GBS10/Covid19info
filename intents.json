@@ -1,0 +1,132 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Hello", "Good day","hi","hello","Hey","hey","Hey there"],
+         "responses": ["Hello, thanks for visiting", "Hey glad to talk","Good to see you again", "Hi there, how can I help?","hey lets talk"],
+         "context_set": ""
+        },
+		{"tag":"health_reply",
+		"patterns":["Iam good","Iam fine","Good"],
+		"responses":["Glad to hear","Good to know","Awesome!"],
+		"context_set":""},
+		{"tag":"health_inquiry",
+		"patterns":["How are you?","How are you doing?","How's your day?"],
+		"responses":["Good going","Great!How are you?","Awesome!Just like you","Fine!Hw about you?"],
+		"context_set":""},
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye","Tata"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon.","Its was nice to talk"],
+		 "context_set":""
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure","Iam here for u"],
+		 "context_set":""
+        },
+		{"tag": "loneliness",
+         "patterns": ["Iam feeling lonely","Iam lonely","I want someone to talk"],
+         "responses": ["Everybody have their lows.Don't worry", "Iam there for you and there are people around you to love you!", "People love you!They'll come around","Iam your friend too you can't be lonely"],
+		 "context_set":""
+		},
+		{"tag": "depression",
+         "patterns": ["Iam depressed", "I feel depressed", "I think i have depression"],
+         "responses": ["Are you sure?I can give you the symptoms", "Time will heal you.Can you tell me how you feel?", "Connect with somebody around you.Can you be specific about your feeling","Seek out for help!I can help.Tell me how you feel."],
+		 "context_set":""
+        },
+		{"tag": "symptoms",
+         "patterns": ["Anxious,sad,hatred", "I feel sad all the time", "I seem to have lost sleep","I can't sleep","Iam anxious and angry"],
+         "responses": ["Well that doesn't mean you have depression.You can check out the symptoms type Symptoms of depression", "Time will heal you.You can check out the symptoms type Symptoms of depression"],
+		 "context_set":""
+        },
+		{"tag": "talk",
+         "patterns": ["Can i talk to you?", "I wanna talk", "I want to talk","I want a friend"],
+         "responses": ["Lets talk!", "Iam ready to talk!Lets do it!! ", "Iam there to listen","Iam ready to listen"],
+		 "context_set":""
+        },
+		{"tag": "query",
+         "patterns": ["What can you do?", "what can do you? ", "What do you do","What's your job?"],
+         "responses": ["I can talk with you,get you to know the symptoms of depression", "I can be your friend and help you talk out", "I can listen to your thoughts and tell you about depression"],
+		 "context_set":""
+        },
+		{"tag": "depression_symptoms",
+         "patterns": ["What are the symptoms of depression?", "Symptoms of depression", "Depression symptoms"],
+         "responses": ["Some of them are anxiety,sudden appetite and weight change,mood swings.For more info you can check out this link https://www.healthline.com/health/depression/recognizing-symptoms"],
+		 "context_set":""
+        },
+		{"tag": "cheer_up",
+         "patterns": ["Can you cheer me up?","Help me to be happy", "I want to be happy"],
+         "responses": ["Let me cheer you up.Want to hear a joke?Ask me to tell a joke"],
+		 "context_set":""
+        },
+		{"tag": "joke",
+         "patterns": ["Tell a joke","crack a joke", "I want to hear a joke","Tell me a joke"],
+         "responses": ["Me: Would you like to be the sun in my life?Her: Awww... Yes!!!Me: Good then stay 92.96 million miles away from me","Why are frogs always so happy? They eat what ever bugs them","What do you call an alligator who's a detective? An investi-gator","What lights up a soccer stadium? A soccer match","Why shouldn't you write with a broken pencil? Because...it's pointless","What's the difference between the bird flu and the swine flu? One requires tweetment and the other an oinkment."],
+		 "context_set":""
+        },
+		{"tag": "no_understand",
+         "patterns":[],
+         "responses": ["Sorry!Try again"],
+		 "context_set":""
+        },
+		{"tag": "weather",
+         "patterns":["How's the weather today?","What's the weather today?","How's weather today?"],
+         "responses": ["It's a pleasant sunny time","It a calming cloudy day","Its storming rain today"],
+		 "context_set":""
+        },
+		{"tag": "what's_covid",
+         "patterns":["What is Covid-19?","What's Covid-19?","Covid-19","tell me about Covid-19"],
+         "responses": [" COVID-19 is a disease caused by a new strain of coronavirus. 'CO' stands for corona, 'VI' for virus, and 'D' for disease. Formerly, this disease was referred to as '2019 novel coronavirus' or '2019-nCoV'."],
+		 "context_set":""
+        },
+		{"tag": "spread_covid",
+         "patterns":["How does Covid-19 spread?","how can Covid-19 spread?","Covid-19 spread"],
+         "responses": [" COVID-19 spreads mainly by droplets produced as a result of coughing or sneezing of a COVID-19 infected person.This can happen in two ways: Direct close contact: one can get the infection by being in close contact with COVID-19 patients (within one Metre of the infected person), especially if they do not cover their face when coughing or sneezing. Indirect contact: the droplets survive on surfaces and clothes for many days. Therefore, touching any such infected surface or cloth and then touching one’s mouth, nose or eyes can transmit the disease."],
+		 "context_set":""
+        },
+		{"tag": "symptoms_covid",
+         "patterns":["What are the symptoms for Covid-19 ?","What are the symptoms of Covid-19 ?","Covid-19 symptoms","Symptoms for Covid-19","Symptoms of covid"],
+         "responses": ["Most common symptoms:  -fever -dry cough -tiredness Less common symptoms: -aches and pains -sore throat -diarrhoea -conjunctivitis -headache -loss of taste or smell -a rash on skin, or discolouration of fingers or toes Serious symptoms: -difficulty breathing or shortness of breath -chest pain or pressure -loss of speech or movement.Seek immediate medical attention if you have serious symptoms. Always call before visiting your doctor or health facility."],
+		 "context_set":""
+        },
+		{"tag": "prevention_covid",
+         "patterns":["How can we prevent Covid-19 ?","How can I prevent Covid-19 ?","Covid-19 prevention","Preventions for Covid-19"],
+         "responses": ["To prevent the spread of COVID-19:Clean your hands often. Use soap and water, or an alcohol-based hand rub.Maintain a safe distance from anyone who is coughing or sneezing.Don’t touch your eyes, nose or mouth.Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.Stay home if you feel unwell.If you have a fever, cough and difficulty breathing, seek medical attention. Call in advance.Follow the directions of your local health authority.Avoiding unneeded visits to medical facilities allows healthcare systems to operate more effectively, therefore protecting you and others."],
+		 "context_set":""
+        },
+		{"tag": "cure_covid",
+         "patterns":["What is the cure for Covid-19?","Is there any cure for Covid-19?","Covid-19 cure","Cure for Covid-19"],
+         "responses": ["To date, there are no specific vaccines or medicines for COVID-19. Treatments are under investigation, and will be tested through clinical trials. So take plenty of self care."],
+		 "context_set":""
+        },
+		{"tag": "travel_covid",
+         "patterns":["Can I travel during this time?","Is it allowed to travel now?","Can I travel now?"],
+         "responses": ["Yes, unlike the previous guidelines, the new set of rules issued by the Ministry of Home Affairs on 17 May says:-Inter-state movement of passenger vehicles and buses, with mutual consent of the state(s) and UT(s) involved. -Intra-state movement of passenger vehicles and buses, as decided by the states and UTs."],
+		 "context_set":""
+        },
+		{"tag": "Pet_covid",
+         "patterns":["How to take care of pets during this time?","How to take care of my pet during this time?","Pet care"],
+         "responses": ["I understand how difficult it is for our pets.So..Here are some activities you can engage them in!This is a great time to train your pets.Use your pet's favorite treats to do so!Play with them.Create indoor obstacles for them to play with.","It is a stresfful time for your pets too.You can cheer them up by playing interesting games like hide n seek with them.Make diy pet toys and gift them to your pets.Feed them healthy and nutricious food and love them a lot!"],
+		 "context_set":""
+        },
+		{"tag": "groceries_covid",
+         "patterns":["Is getting groceries and vegetables safe during this time?","How to take care while buying groceries?"],
+         "responses": ["Groceries are necessary but so are you.Make sure to wear mask before going to the store.Maintain social distancing.Once reaching home sanitize your hands as well as the products you bought.Wash your mask,dress,and grocery bag and dry them in the sun.Take care!"],
+		 "context_set":""
+        },
+		{"tag": "entertainment",
+         "patterns":["It's boring","Iam bored","Are you bored?","Iam so bored"],
+         "responses": ["Iam bored too!!Try out these games by google.https://www.google.com/doodles/stay-and-play-at-home-with-popular-past-google-doodles-hip-hop-2017","We all are!Check out these mini games by google!https://www.google.com/doodles/stay-and-play-at-home-with-popular-past-google-doodles-hip-hop-2017"],
+		 "context_set":""
+        },
+		{"tag": "high_risk",
+         "patterns":["Who's at a higher risk in covid-19?","Whos at a higher risk during covid-19?","Who's at a higher risk now?"],
+         "responses": ["According to WHO People aged 65 years and older,People having serious health conditions such as diabetes,lung diseases etc.,. are more prone to Covid-19"],
+		 "context_set":""
+        },
+		{"tag": "high_risk_do",
+         "patterns":["What should people at a higher risk in covid-19 do?","What should people at a higher risk for covid-19 do?"],
+         "responses": ["f you are more prone to Covid-19 no worries!!Just follow the following safety tips to stay safe and healthy:Stock up on supplies,Take everyday precautions to keep space between yourself and others,When you go out in public, keep away from others who are sick,Limit close contact and wash your hands often,Avoid crowds, cruise travel, and non-essential travel"],
+		 "context_set":""
+        }
+		
+   ]
+}
